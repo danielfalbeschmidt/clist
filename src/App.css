@@ -1,0 +1,122 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  padding: 20px;
+  text-align: center;
+  background-color: #282c34;
+  color: black;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form input,
+form button {
+  display: block;
+  margin: 10px auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li h3 {
+  margin: 0 0 10px 0;
+}
+
+li p {
+  margin: 5px 0;
+}
+
+label strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #d2d2d2;
+}
+
+li .event-description {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+li .event-duration,
+li .event-start-time {
+  font-size: 0.9em;
+  color: #333;
+}
+
+li .event-duration span,
+li .event-start-time span {
+  font-weight: bold;
+  color: #555;
+}
+
+button {
+  background-color: #007bff; /* Primary blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Padding for size */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+
+  /* Shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:disabled {
+  background-color: #cccccc; /* Grey color for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+  box-shadow: none; /* Remove shadow for disabled state */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="datetime-local"],
+input[type="number"] {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for size */
+  margin: 10px 0; /* Margin for spacing */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Slightly rounded corners */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus state */
+
+  /* Shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="datetime-local"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+  outline: none; /* Remove default outline */
+}
